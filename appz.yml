@@ -15,6 +15,8 @@ build:
 deploy:
     context: francisjoy/DEV
     replicas: 1
+    port:
+    - 80
      
 properties:
     MONGODB_HOST: mongodb-4-4
