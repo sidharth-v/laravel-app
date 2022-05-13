@@ -1,0 +1,29 @@
+app:
+    name: phpworker
+    code: phpworker
+    notify: fjoy@ecloudcontrol.com
+    
+build:
+    version: 7.4
+    env: DEV
+    build_file: none
+    #args: 
+    #  ENABLE_INFORMIX: '1.3'
+    output_files: output/*.zip
+    image_template: phpworker-7.4
+    
+deploy:
+    context: francisjoy/DEV
+    replicas: 1
+     
+properties:
+    MONGODB_HOST: mongodb-4-4
+    MONGODB_PORT: 27017
+    MONGODB_DATABASE: phpdatabase
+    MONGODB_USERNAME: php
+    MONGODB_PASSWORD:
+          vault: MONGODB_PASSWORD
+    
+    #ELASTIC_MIGRATE: 0
+    #DB_AUTHENTICATION_DATABASE: Admin
+    revision : 1
