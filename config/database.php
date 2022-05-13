@@ -74,6 +74,15 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
+	
+	'mongo' => [
+            'driver' => 'mongo',
+            'host' => env('MONGODB_HOST', 'mongodb-4-4'),
+            'port' => env('MONGODB_PORT', '27017'),
+            'database' => env('MONGODB_DATABASE', 'phpdatabase'),
+            'username' => env('MONGODB_USERNAME', 'php'),
+            'password' => env('MONGODB_PASSWORD', ''),
+        ],
 
     ],
 
