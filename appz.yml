@@ -19,6 +19,13 @@ deploy:
     - 8000
      
 properties:
+    
+    APP_NAME: Laravel
+    APP_ENV: local
+    APP_KEY:
+        vault: APP_KEY
+    APP_DEBUG: true
+    APP_URL: https://francisjoy-dev-laravel-app-7-4.038ecc66.lowtouch.cloud
     MONGODB_HOST: mongodb-4-4
     MONGODB_PORT: 27017
     MONGODB_DATABASE: phpdatabase
