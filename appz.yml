@@ -1,6 +1,6 @@
 app:
-    name: phpworker
-    code: phpworker
+    name: laravel-app
+    code: laravel-app
     notify: fjoy@ecloudcontrol.com
     
 build:
