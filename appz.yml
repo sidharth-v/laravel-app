@@ -31,8 +31,8 @@ properties:
     DB_PORT: 5432
     DB_DATABASE: php
     DB_USERNAME: php
-    DB_PASSWORD:
-          vault: PHP_PASSWORD
+    DB_PASSWORD: VUwEoKDqt26Vrl4aT29E
+    #      vault: PHP_PASSWORD
     
     #ELASTIC_MIGRATE: 0
     #DB_AUTHENTICATION_DATABASE: Admin
