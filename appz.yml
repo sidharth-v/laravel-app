@@ -17,6 +17,13 @@ deploy:
     replicas: 1
     port:
     - 8000
+    
+volumes:
+  - claim: phpworker-data
+    mount: /var/www
+    name: data
+    size: 5Gi
+    mode: ReadWriteOnce
      
 properties:
     
