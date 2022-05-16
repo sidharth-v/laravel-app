@@ -26,13 +26,13 @@ properties:
         vault: APP_KEY
     APP_DEBUG: true
     APP_URL: https://francisjoy-dev-laravel-app-7-4.038ecc66.lowtouch.cloud
-    #DB_CONNECTION: mongodb-4-4
-    DB_HOST: mongodb-4-4
-    DB_PORT: 27017
-    DB_DATABASE: phpdatabase
+    DB_CONNECTION: pgsql
+    DB_HOST: postgres13-master-13-z
+    DB_PORT: 5432
+    DB_DATABASE: php
     DB_USERNAME: php
     DB_PASSWORD:
-          vault: MONGODB_PASSWORD
+          vault: PHP_PASSWORD
     
     #ELASTIC_MIGRATE: 0
     #DB_AUTHENTICATION_DATABASE: Admin
