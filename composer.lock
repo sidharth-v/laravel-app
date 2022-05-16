@@ -505,6 +505,7 @@
                 "symfony/var-dumper": "~3.3",
                 "tijsverkoyen/css-to-inline-styles": "~2.2",
                 "vlucas/phpdotenv": "~2.2"
+                "fzaninotto/faker": "~1.4"
             },
             "replace": {
                 "illuminate/auth": "self.version",
