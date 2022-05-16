@@ -7,8 +7,8 @@ build:
     version: 7.4
     env: DEV
     build_file: none
-    #args: 
-    #  ENABLE_INFORMIX: '1.3'
+    args: 
+      ENABLE_INFORMIX: '1.3'
     output_files: output/*.zip
     image_template: phpworker-7.4
     
