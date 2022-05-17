@@ -14,18 +14,10 @@ build:
     
 deploy:
     context: francisjoy/DEV
-    type: statefulset
     replicas: 1
     port:
     - 8000
     
-volumes:
-  - claim: phpworker-data
-    mount: /var/www
-    name: data
-    size: 5Gi
-    mode: ReadWriteOnce
-     
 properties:
     
     APP_NAME: Laravel
@@ -39,8 +31,9 @@ properties:
     DB_PORT: 5432
     DB_DATABASE: php
     DB_USERNAME: php
-    DB_PASSWORD: VUwEoKDqt26Vrl4aT29E
-    #      vault: PHP_PASSWORD
+    #DB_PASSWORD: VUwEoKDqt26Vrl4aT29E
+    DB_PASSWORD:
+          vault: PHP_PASSWORD
     
     #ELASTIC_MIGRATE: 0
     #DB_AUTHENTICATION_DATABASE: Admin
