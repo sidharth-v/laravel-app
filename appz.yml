@@ -27,7 +27,7 @@ properties:
     APP_DEBUG: true
     APP_URL: https://sidharth-v-dev-laravel-app-7-4.038ecc66.lowtouch.cloud
     DB_CONNECTION: pgsql
-    DB_HOST: postgres13-master-13-x
+    DB_HOST: postgres13-master-13-y
     DB_PORT: 5432
     DB_DATABASE: php
     DB_USERNAME: php
