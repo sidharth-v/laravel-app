@@ -1,7 +1,7 @@
 app:
     name: laravel-app
     code: laravel-app
-    notify: fjoy@ecloudcontrol.com
+    notify: svengathattil@ecloudcontrol.com
     
 build:
     version: 7.4
@@ -13,7 +13,7 @@ build:
     image_template: phpworker-7.4
     
 deploy:
-    context: francisjoy/DEV
+    context: sidharth-v/DEV
     replicas: 1
     port:
     - 8000
@@ -25,15 +25,15 @@ properties:
     APP_KEY:
         vault: APP_KEY
     APP_DEBUG: true
-    APP_URL: https://francisjoy-dev-laravel-app-7-4.038ecc66.lowtouch.cloud
+    APP_URL: https://sidharth-v-dev-laravel-app-7-4.038ecc66.lowtouch.cloud
     DB_CONNECTION: pgsql
     DB_HOST: postgres13-master-13-x
     DB_PORT: 5432
     DB_DATABASE: php
     DB_USERNAME: php
-    DB_PASSWORD: bwUmhSkFlNMDZJYtGFJl
-    #DB_PASSWORD:
-    #      vault: PHP_PASSWORD
+    #DB_PASSWORD: bwUmhSkFlNMDZJYtGFJl
+    DB_PASSWORD:
+        vault: PHP_PASSWORD
     
     #ELASTIC_MIGRATE: 0
     #DB_AUTHENTICATION_DATABASE: Admin
